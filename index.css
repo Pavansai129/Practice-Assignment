@@ -1,0 +1,155 @@
+* {
+  font-family: "Bree Serif";
+}
+
+.display-none {
+  display: none;
+}
+
+.heading {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(41, 60, 205);
+}
+
+.search-and-filter-view-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .search-and-filter-view-section {
+    justify-content: center;
+    column-gap: 20px;
+  }
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 10px 20px;
+  background-color: #b2f7f7;
+}
+.search-input {
+  font-size: 16px;
+  font-weight: 500;
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  border: 5px;
+  background-color: #b2f7f7;
+}
+
+.search-icon {
+  height: 100%;
+}
+
+.loading-spinner {
+  background: none;
+  border: 5px solid rgba(81, 173, 248, 0.1);
+  border-top: 4px solid #3d5ff5;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.product-cards-container {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .product-cards-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.product-card {
+  display: flex;
+  column-gap: 10px;
+  align-items: flex-start;
+  border: none;
+  width: 100%;
+  height: fit-content;
+  background-color: rgba(146, 215, 249, 0.5);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .product-card {
+    width: 350px;
+  }
+}
+
+.product-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 50px;
+  height: 30px;
+  font-weight: 300;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(143, 122, 236);
+}
+.empty-badge {
+  visibility: hidden;
+  width: 50px;
+}
+.product-image {
+  height: 200px;
+  width: 150px;
+}
+.product-title-and-varients-section {
+  padding: 10px;
+  line-height: 1.5;
+}
+
+.product-title {
+  font-weight: 500;
+  font-size: 22px;
+  padding: 0;
+  margin: 0;
+}
+.product-varient-list {
+  padding: 0;
+}
+
+.product-varient {
+  font-size: 15px;
+  font-weight: 300;
+  list-style-type: none;
+}
+.list-view {
+  flex-direction: column;
+  align-items: center;
+}
+.grid-view {
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.highlight {
+  background: rgb(77, 200, 241);
+}
